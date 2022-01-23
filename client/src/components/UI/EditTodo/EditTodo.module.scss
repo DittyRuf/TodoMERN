@@ -1,0 +1,17 @@
+@use './../../../scss/abstracts/variables' as *;
+@use './../../../scss/abstracts/mixins' as *;
+@use './../../../scss/placeholders/btn' as *;
+
+.edit {
+	@include flex-mother();
+	height: 100%;
+	padding: 0 2em;
+	&__button {
+		@extend %btn;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 1px solid
+			map-get(map-get($colors, 'dark-theme'), 'color-very-dark-grayish-blue');
+	}
+}

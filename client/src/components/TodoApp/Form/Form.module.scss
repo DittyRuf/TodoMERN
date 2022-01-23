@@ -1,0 +1,27 @@
+@use './../../../scss/abstracts/variables' as *;
+@use './../../../scss/abstracts/mixins' as *;
+@use './../../../scss/placeholders/btn' as *;
+
+.form {
+	@include flex-mother(row, center, space-between);
+	position: relative;
+	height: 50px;
+	margin-top: 4em;
+	padding-right: 2em;
+	background-color: map-get(
+		map-get($colors, 'dark-theme'),
+		'color-very-dark-desaturated-blue'
+	);
+	&__input {
+		flex-grow: 1;
+	}
+	&__input {
+		height: 100%;
+		padding-left: 2em;
+		background: transparent;
+		border: none;
+		font-size: 1.7rem;
+		color: map-get(map-get($colors, 'dark-theme'), 'color-dark-grayish-blue');
+		font-weight: map-get($weights, '700');
+	}
+}

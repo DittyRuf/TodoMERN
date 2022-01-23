@@ -22,4 +22,12 @@
 			transform: scale(1.1);
 		}
 	}
+	&__todolist {
+		margin-top: 4em;
+		min-height: 10vh;
+		background-color: map-get(
+			map-get($colors, 'dark-theme'),
+			'color-very-dark-desaturated-blue'
+		);
+	}
 }

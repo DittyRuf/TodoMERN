@@ -15,7 +15,7 @@ const TodoHeading = () => {
 		<section className={styled.todoapp__heading}>
 			<h1 className={styled.todoapp__title}>Todo</h1>
 			<button className={styled.todoapp__button} onClick={handleClick}>
-				<img src={sunSVG} alt='' />
+				<img src={theme === 'light' ? sunSVG : moonSVG} alt='' />
 			</button>
 		</section>
 	);

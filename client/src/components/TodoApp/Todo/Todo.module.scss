@@ -1,0 +1,15 @@
+@use './../../../scss/abstracts/mixins' as *;
+@use './../../../scss/abstracts/variables' as *;
+
+.todo {
+	@include flex-mother(row, center, space-between);
+	height: 50px;
+	border-bottom: 1px solid
+		map-get(map-get($colors, 'dark-theme'), 'color-very-dark-grayish-blue');
+	&__title {
+		padding-left: 2em;
+		font-size: 1.7rem;
+		flex-grow: 1;
+		color: map-get(map-get($colors, 'dark-theme'), 'color-light-grayish-blue');
+	}
+}

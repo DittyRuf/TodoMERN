@@ -1,0 +1,20 @@
+@use './../../../scss/abstracts/mixins' as *;
+@use './../../../scss/abstracts/variables' as *;
+@use './../../../scss/placeholders/btn' as *;
+
+.actions {
+	@include flex-mother(row, center, space-between);
+	height: 50px;
+	padding: 0 2em;
+	color: map-get(map-get($colors, 'dark-theme'), 'color-dark-grayish-blue');
+	font-weight: map-get($weights, '700');
+	&__button {
+		@extend %btn;
+		margin: 0 0.5em;
+		color: map-get(map-get($colors, 'dark-theme'), 'color-dark-grayish-blue');
+		font-weight: map-get($weights, '700');
+		&:hover {
+			color: map-get(map-get($colors, 'primary'), 'color-bright-blue');
+		}
+	}
+}

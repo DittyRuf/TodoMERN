@@ -1,6 +1,6 @@
 import Header from './components/Header/Header';
 import TodoList from './components/TodoApp/TodoApp';
-import Wrapper from './components/Wrapper/Wrapper';
+import Wrapper from './components/UI/Wrapper/Wrapper';
 import themeContext from './store';
 import { useState } from 'react';
 
