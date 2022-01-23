@@ -1,0 +1,25 @@
+@use './../../scss/abstracts/mixins' as *;
+@use './../../scss/abstracts/variables' as *;
+
+.todoapp {
+	width: min(90%, 50em);
+	margin: -15em auto 0;
+	&__title {
+		color: map-get(map-get($colors, 'light-theme'), color-very-light-gray);
+		font-size: clamp(2rem, 6vh, 4rem);
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+	}
+	&__heading {
+		@include flex-mother(row, center, space-between);
+	}
+	&__button {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
