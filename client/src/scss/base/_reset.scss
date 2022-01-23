@@ -6,6 +6,13 @@
 	font-size: $font-size;
 }
 
+body {
+	background-color: map-get(
+		map-get($colors, 'dark-theme'),
+		'color-very-dark-blue'
+	);
+}
+
 *,
 *::before,
 *::after {

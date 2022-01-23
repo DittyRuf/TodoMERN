@@ -1,5 +1,13 @@
-function App() {
-	return <h1>Hello!</h1>;
-}
+import Header from './components/Header/Header';
+import TodoList from './components/TodoList/TodoList';
+
+const App = () => {
+	return (
+		<>
+			<Header />
+			<TodoList />
+		</>
+	);
+};
 
 export default App;
