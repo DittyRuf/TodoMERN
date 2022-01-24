@@ -1,6 +1,6 @@
 import styled from './EditTodo.module.scss';
 import checkIcon from './../../../assets/svg/icon-check.svg';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const EditTodo = () => {
 	const [edited, setEdited] = useState('');
