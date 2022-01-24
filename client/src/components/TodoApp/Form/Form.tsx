@@ -22,8 +22,6 @@ const Form = () => {
 		setTodo(event.target.value);
 	};
 
-	console.log(isEmpty);
-
 	return (
 		<form className={styled.form} onSubmit={handleSubmit}>
 			<EditTodo />

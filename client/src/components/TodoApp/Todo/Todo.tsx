@@ -1,11 +1,12 @@
 import styled from './Todo.module.scss';
 import EditTodo from '../../UI/EditTodo/EditTodo';
+import TodoProp from './Todo.types';
 
-const Todo = () => {
+const Todo = ({ name, completed }: TodoProp) => {
 	return (
 		<div className={styled.todo}>
-			<EditTodo />
-			<h2 className={styled.todo__title}>Todo</h2>
+			<EditTodo completed={completed} />
+			<h2 className={styled.todo__title}>{name}</h2>
 		</div>
 	);
 };

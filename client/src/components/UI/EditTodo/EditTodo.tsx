@@ -1,15 +1,18 @@
 import styled from './EditTodo.module.scss';
 import checkIcon from './../../../assets/svg/icon-check.svg';
 import { useState } from 'react';
+import EditTodoProps from './EditTodo.types';
 
-const EditTodo = () => {
+const EditTodo = ({ completed }: EditTodoProps) => {
 	const [edited, setEdited] = useState('');
 
 	const handleClick = () => {
 		setEdited(edited === '' ? '--complete' : '');
 	};
 
-	const modified = `edit__button${edited}`;
+	const modified = (completed || edited) && `edit__button${edited}`;
+
+	console.log(modified);
 
 	return (
 		<div className={styled.edit}>
